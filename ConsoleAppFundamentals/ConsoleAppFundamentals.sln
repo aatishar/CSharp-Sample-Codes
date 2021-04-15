@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppFundamentals-Gett
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp-GenericHost-Dependency_Injection_Intro", "ConsoleApp-GenericHost-Dependency_Injection_Intro\ConsoleApp-GenericHost-Dependency_Injection_Intro.csproj", "{B6045BDB-6F61-4E0A-93CE-76ED0E14A0C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xUnitTesting", "xUnitTesting\xUnitTesting.csproj", "{191E002C-AA01-4902-A38B-80F08645F764}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "xUnitTesting", "xUnitTesting\xUnitTesting.csproj", "{191E002C-AA01-4902-A38B-80F08645F764}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppForUnitTesting", "ConsoleAppForUnitTesting\ConsoleAppForUnitTesting.csproj", "{6B8DEB7F-0BAD-45B4-9207-A2AB0C6AD9DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppForUnitTesting", "ConsoleAppForUnitTesting\ConsoleAppForUnitTesting.csproj", "{6B8DEB7F-0BAD-45B4-9207-A2AB0C6AD9DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Configuration_Logging_DependencyInjection", "Configuration_Logging_DependencyInjection\Configuration_Logging_DependencyInjection.csproj", "{B7C7F12B-E624-4B09-BDFE-E10C806A6530}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{6B8DEB7F-0BAD-45B4-9207-A2AB0C6AD9DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6B8DEB7F-0BAD-45B4-9207-A2AB0C6AD9DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6B8DEB7F-0BAD-45B4-9207-A2AB0C6AD9DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7C7F12B-E624-4B09-BDFE-E10C806A6530}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7C7F12B-E624-4B09-BDFE-E10C806A6530}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7C7F12B-E624-4B09-BDFE-E10C806A6530}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7C7F12B-E624-4B09-BDFE-E10C806A6530}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

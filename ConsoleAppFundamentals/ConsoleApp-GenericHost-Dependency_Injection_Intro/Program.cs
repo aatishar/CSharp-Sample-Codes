@@ -47,7 +47,7 @@ namespace ConsoleApp_GenericHost
         static IHostBuilder CreateHostBuilder(string[] args)
         {
             return Host.CreateDefaultBuilder(args)
-            .ConfigureServices((_, services) =>
+            .ConfigureServices((hostBuilder, services) =>
             services.AddSingleton<IMessageWriter, MessageWriter>()
                     .AddSingleton<HelloWorld>());
 
