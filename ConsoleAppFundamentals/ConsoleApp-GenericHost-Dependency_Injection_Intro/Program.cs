@@ -34,13 +34,13 @@ namespace ConsoleApp_GenericHost
     }
     public class Program
     {
-        static Task Main(string[] args)
+        static void Main(string[] args)
         {
             using IHost host = CreateHostBuilder(args).Build();
 
             host.Services.GetRequiredService<HelloWorld>();
 
-            return host.RunAsync();
+            host.Run();
 
         }
 

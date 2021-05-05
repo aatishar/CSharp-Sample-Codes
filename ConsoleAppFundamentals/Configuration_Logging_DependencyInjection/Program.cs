@@ -57,6 +57,7 @@ namespace Configuration_Logging_DependencyInjection
                 .AddSingleton<HelloWorld>()
                 .AddLogging((loggingBuilder) => {
                     loggingBuilder.ClearProviders();
+                    loggingBuilder.AddDebug();
                     loggingBuilder.AddConsole();
                 });
 
@@ -67,6 +68,7 @@ namespace Configuration_Logging_DependencyInjection
                     .AddFilter("Microsoft", LogLevel.Warning)
                     .AddFilter("System", LogLevel.Warning)
                     .AddFilter("LoggingConsoleApp.Program", LogLevel.Debug)
+                    .AddDebug()
                     .AddConsole();
             });
 
@@ -76,7 +78,7 @@ namespace Configuration_Logging_DependencyInjection
             services.AddSingleton(appLogger);
 
             //Create configuration
-            //Need change to the property of appsetting.json so that it is copied to output directory 
+            //Need to change the property of appsetting.json so that it is copied to output directory 
             var configuration = new ConfigurationBuilder()
                                  .SetBasePath(Directory.GetCurrentDirectory())
                                  .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
@@ -90,7 +92,8 @@ namespace Configuration_Logging_DependencyInjection
             var logger = serviceProvider.GetRequiredService<ILogger<Program>>();
 
 
-            logger.LogInformation("Dependency Injection, configuration and logging");
+            logger.LogInformation("Dependency Injection, configuration and logging (Look for me in the Output for debug " +
+                "as well on the console");
             Console.WriteLine("Key value pair of  data in appconfig file");
             foreach (var keyValue in configurationRoot.AsEnumerable())
             {
